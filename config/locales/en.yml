@@ -1,0 +1,48 @@
+en:
+  activemodel:
+    attributes:
+      dummy_census_authorization_handler:
+        date_of_birth: Date of birth
+        document_number: Document number
+        document_type: Document type
+        gender: Gender
+        postal_code: Postal code
+        scope_id: District
+  dummy_census_authorization:
+    form:
+      date_select:
+        day: Day
+        month: Month
+        year: Year
+      gender_help: These data are voluntary and are requested in compliance with article 56 of the Law 17/2015, of 21 July, of effective equality of men and women.
+      gender_prompt: Please, select a gender
+      genders:
+        man: Man
+        non_binary: Non binari
+        woman: Woman
+      scope_prompt: Please, select your district
+  dummy_census_authorization_handler:
+    age_under: Has de ser major de %{min_age} anys per validar-te
+    invalid_document: Incorrect document number
+  decidim:
+    authorization_handlers:
+      dummy_census_authorization_handler:
+        explanation: Verify with the census (padró)
+        fields:
+          date_of_birth: Date of birth
+          document_number: Document number
+          document_type: Document type
+          gender: Gender
+          postal_code: Postal code
+          scope_id: District
+        name: Census (padró)
+    dummy_census_authorization_handler:
+      document_types:
+        dni: DNI
+        nie: NIE
+        passport: Passport
+    verifications:
+      authorizations:
+        first_login:
+          actions:
+            dummy_census_authorization_handler: Verify with the census (padró)
